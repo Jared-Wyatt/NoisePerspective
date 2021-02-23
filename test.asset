@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca810006d7ca5e44abbfbf076dcf9294, type: 3}
+  m_Name: test
+  m_EditorClassIdentifier: 
+  saveData: "Nodes{\n\tNode\n\t{\n\t\ttype=NoisePerspective.Noise.Perlin;\n\t\tname=Perlin
+    - 0;\n\t\tid=0;\n\t\twindowPosition=(153.0, 58.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t\tSeed=37251612;\n\t\tFrequency=1;\n\t\tLacunarity=2;\n\t\tOctaveCount=6;\n\t\tPersistence=0.5;\n\t\tQuality=1;\n\t\tAmplitude=0.5;\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Operator.Multiply;\n\t\tname=Multiply
+    - 1;\n\t\tid=1;\n\t\twindowPosition=(493.0, 62.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Noise.Billow;\n\t\tname=Billow
+    - 2;\n\t\tid=2;\n\t\twindowPosition=(314.0, 165.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t\tSeed=411858543;\n\t\tFrequency=1;\n\t\tLacunarity=2;\n\t\tOctaveCount=6;\n\t\tPersistence=0.5;\n\t\tQuality=1;\n\t\tAmplitude=0.5;\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Noise.RidgedMultifractal;\n\t\tname=Ridged
+    - 3;\n\t\tid=3;\n\t\twindowPosition=(504.0, 253.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t\tSeed=1405044580;\n\t\tFrequency=1;\n\t\tLacunarity=2;\n\t\tOctaveCount=6;\n\t\tQuality=1;\n\t\tAmplitude=0.5;\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Operator.Curve;\n\t\tname=Curve
+    - 4;\n\t\tid=4;\n\t\twindowPosition=(952.0, 115.0);\n\t\tisPerspective=True;\n\t\tshowValues=True;\n\t\tControlPoints=\n\t\t[\n\t\t\t(-0.9,
+    0.1)\n\t\t\t(-0.1, 0.0)\n\t\t\t(1.0, 0.1)\n\t\t];\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Output.TerrainOutput;\n\t\tname=Output:
+    Terrain - 5;\n\t\tid=5;\n\t\twindowPosition=(1232.0, 204.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t}\n\tNode\n\t{\n\t\ttype=NoisePerspective.Operator.Add;\n\t\tname=Add
+    - 6;\n\t\tid=6;\n\t\twindowPosition=(744.0, 181.0);\n\t\tisPerspective=False;\n\t\tshowValues=True;\n\t}\n}\nConnections{\n\tConnection\n\t{\n\t\tInputNodeID=1;\n\t\tInputConnectorID=0;\n\t\tOutputNodeID=0;\n\t\tOutputConnectorID=0;\n\t}\n\tConnection\n\t{\n\t\tInputNodeID=1;\n\t\tInputConnectorID=1;\n\t\tOutputNodeID=2;\n\t\tOutputConnectorID=0;\n\t}\n\tConnection\n\t{\n\t\tInputNodeID=5;\n\t\tInputConnectorID=0;\n\t\tOutputNodeID=4;\n\t\tOutputConnectorID=0;\n\t}\n\tConnection\n\t{\n\t\tInputNodeID=6;\n\t\tInputConnectorID=0;\n\t\tOutputNodeID=1;\n\t\tOutputConnectorID=0;\n\t}\n\tConnection\n\t{\n\t\tInputNodeID=6;\n\t\tInputConnectorID=1;\n\t\tOutputNodeID=3;\n\t\tOutputConnectorID=0;\n\t}\n\tConnection\n\t{\n\t\tInputNodeID=4;\n\t\tInputConnectorID=0;\n\t\tOutputNodeID=6;\n\t\tOutputConnectorID=0;\n\t}\n}\n"
+  useBezier: 0
+  globalHeightStrength: 1
+  gridOffset: {x: 46, y: 1}
+  connections:
+  - inputNodeID: 1
+    inputConnectorID: 0
+    outputNodeID: 0
+    outputConnectorID: 0
+  - inputNodeID: 1
+    inputConnectorID: 1
+    outputNodeID: 2
+    outputConnectorID: 0
+  - inputNodeID: 5
+    inputConnectorID: 0
+    outputNodeID: 4
+    outputConnectorID: 0
+  - inputNodeID: 6
+    inputConnectorID: 0
+    outputNodeID: 1
+    outputConnectorID: 0
+  - inputNodeID: 6
+    inputConnectorID: 1
+    outputNodeID: 3
+    outputConnectorID: 0
+  - inputNodeID: 4
+    inputConnectorID: 0
+    outputNodeID: 6
+    outputConnectorID: 0
+  terrainOutput:
+  - name: Curve - 4
+    id: 4
+    type: NoisePerspective.Operator.Curve
+    moduleType: SharpNoise.Modules.Curve
+    windowPosition: {x: 952, y: 115}
+    isPerspective: 1
+    showValues: 1
+    seed: 0
+    frequency: 0
+    lacunarity: 0
+    octaveCount: 0
+    persistence: 0
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints:
+    - {x: -0.85789484, y: 0.12456167}
+    - {x: -0.117543876, y: 0.017544031}
+    - {x: 1, y: 0.100000024}
+    quality: 0
+    cellType: 0
+    amplitude: 0
+  - name: Add - 6
+    id: 6
+    type: NoisePerspective.Operator.Add
+    moduleType: SharpNoise.Modules.Add
+    windowPosition: {x: 744, y: 181}
+    isPerspective: 0
+    showValues: 1
+    seed: 0
+    frequency: 0
+    lacunarity: 0
+    octaveCount: 0
+    persistence: 0
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints: []
+    quality: 0
+    cellType: 0
+    amplitude: 0
+  - name: Multiply - 1
+    id: 1
+    type: NoisePerspective.Operator.Multiply
+    moduleType: SharpNoise.Modules.Multiply
+    windowPosition: {x: 493, y: 62}
+    isPerspective: 0
+    showValues: 1
+    seed: 0
+    frequency: 0
+    lacunarity: 0
+    octaveCount: 0
+    persistence: 0
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints: []
+    quality: 0
+    cellType: 0
+    amplitude: 0
+  - name: Ridged - 3
+    id: 3
+    type: NoisePerspective.Noise.RidgedMultifractal
+    moduleType: SharpNoise.Modules.RidgedMulti
+    windowPosition: {x: 504, y: 253}
+    isPerspective: 0
+    showValues: 1
+    seed: 1405044580
+    frequency: 1
+    lacunarity: 2
+    octaveCount: 6
+    persistence: 0
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints: []
+    quality: 1
+    cellType: 0
+    amplitude: 0.5
+  - name: Perlin - 0
+    id: 0
+    type: NoisePerspective.Noise.Perlin
+    moduleType: SharpNoise.Modules.Perlin
+    windowPosition: {x: 153, y: 58}
+    isPerspective: 0
+    showValues: 1
+    seed: 37251612
+    frequency: 1
+    lacunarity: 2
+    octaveCount: 6
+    persistence: 0.5
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints: []
+    quality: 1
+    cellType: 0
+    amplitude: 0.5
+  - name: Billow - 2
+    id: 2
+    type: NoisePerspective.Noise.Billow
+    moduleType: SharpNoise.Modules.Billow
+    windowPosition: {x: 314, y: 165}
+    isPerspective: 0
+    showValues: 1
+    seed: 411858543
+    frequency: 1
+    lacunarity: 2
+    octaveCount: 6
+    persistence: 0.5
+    power: 0
+    roughness: 0
+    displacement: 0
+    value: 0
+    maximum: 0
+    minimum: 0
+    fallOff: 0
+    scaleValue: 0
+    bias: 0
+    Coefficient: 0
+    useDistance: 0
+    isInverted: 0
+    exponent: 0
+    x: 0
+    y: 0
+    z: 0
+    controlPoints: []
+    quality: 1
+    cellType: 0
+    amplitude: 0.5
+  terrainOutputLastID: 4
