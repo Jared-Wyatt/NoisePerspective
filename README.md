@@ -1,9 +1,11 @@
 # NoisePerspective
-Node based terrain generator for Unity
+Node based terrain generator for Unity.
 
-**Screenshots**
+NoisePerspective allow you to connect and mix nodes using various noise algoritihms while viewing the live result of each nodes influence.
+
+### Screenshots
 ![Nodes](/Screenshots/Nodes.png?raw=true "Nodes")
 ![Terrain](/Screenshots/Terrain.png?raw=true "Terrain")
 
-**Video**
+### Video (Click to open in youtube)
 [![Video](https://img.youtube.com/vi/mkatKlnBKHg/maxresdefault.jpg)](https://youtu.be/mkatKlnBKHg)
